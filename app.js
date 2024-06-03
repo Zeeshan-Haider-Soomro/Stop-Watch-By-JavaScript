@@ -48,7 +48,7 @@ function counter() {
 
 // fort start button create function
 function counterStart() {
-    uid = setInterval(counter, 1000);
+    uid = setInterval(counter, 15);
 }
 
 // fort stop button create function
