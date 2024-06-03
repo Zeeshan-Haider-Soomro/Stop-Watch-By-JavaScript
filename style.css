@@ -48,7 +48,7 @@
     background: #ff414e;
     border-radius: 5px;
     position: absolute;
-    right: -30px;
+    right: -50px;
     bottom: -50px;
     z-index: -1;
 }
@@ -92,4 +92,51 @@ button{
 }
 #seconds::after{
     content: 'SEC';
+}
+
+@media screen and (max-width:450px){
+    body{
+        height: 100vh;
+    }
+    .container{
+        height: 100%;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+    .container::before{
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+    .clock{
+        width: 200px;
+        height: 0;
+    }
+    .clock span {
+        font-size: 25px;
+        
+    }
+    .clock span::after{
+        font-size: 10px;
+        margin-bottom: -10px;
+    }
+    button{
+        padding: 10px;
+        font-size: 10px;
+        color: #fff;
+        background: linear-gradient(45deg, #08001f, #30197d, #419aff, #f42b75, #08001f);
+        outline: 0;
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        /* transform: skew(5deg); */
+    }
 }
