@@ -70,6 +70,16 @@ button{
     padding: 10px;
     font-size: 26px;
     color: #fff;
+    background-color: #08001f;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    padding: 10px;
+    font-size: 26px;
+    color: #fff;
     background: linear-gradient(45deg, #08001f, #30197d, #419aff, #f42b75, #08001f);
     outline: 0;
     border: 0;
